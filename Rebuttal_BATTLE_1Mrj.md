@@ -16,7 +16,18 @@ The results show that compared to BATTLE-Origin, BATTLE-Mixed improved the Preci
 
 **Question 2 Respond:** 
 
-The total training time for our BATTLE framework is approximately 35 hours. The bi-level optimization method proposed in Section 3.3 can reduce the training time of BATTLE in the following ways:
+We conducted experiments comparing BATTLE with other baselines regarding computational efficiency. As shown in Table 1, the experimental results demonstrate that BATTLE does not significantly increase training time compared to several other methods. However, we achieve notable performance improvement.
+
+**Table 1:** Training time for different methods
+
+| Methods       | BlogCatalog | Flickr    |
+| ------------- | ----------- | --------- |
+| ANEMONE(2021) | 10.07 min   | 22.40 min |
+| CoLA(2022)    | 9.35 min    | 20.60 min |
+| Sub-CR(2022)  | 10.90 min   | 23.62 min |
+| BATTLE(Ours)  | 11.71 min   | 25.04 min |
+
+The bi-level optimization method proposed in Section 3.3 can reduce the training time of BATTLE in the following ways:
 
 1. **Explicit Dependency Modeling**: The bi-level optimization method models the dependencies between the upper-level task (implicit relationship mining) and the lower-level task (anomaly detection on attributed networks) explicitly, making the optimization process more direct and efficient. This approach can reduce unnecessary iterations because it allows the model to update parameters more precisely, reflecting the complex coupling between the two tasks.
 
