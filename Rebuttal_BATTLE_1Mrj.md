@@ -32,8 +32,8 @@ The total training time for our BATTLE framework is approximately 35 hours. The 
 
    2. **Outer-Product Approximation**:
       $$
-      \frac{\partial^2 f}{\partial \theta_D \partial \theta_D} \approx \left( \frac{\partial f}{\partial \theta_D} \right) \left( \frac{\partial f}{\partial \theta_D} \right)^\top, \quad \frac{\partial^2 f}{\partial \theta_D \partial \theta_G} \approx \left( \frac{\partial f}{\partial \theta_D} \right) \left( \frac{\partial f}{\partial \theta_G} \right)^\top
-      $$
+\frac{\partial^2 f}{\partial \theta_D \partial \theta_D} \approx \left( \frac{\partial f}{\partial \theta_D} \right) \left( \frac{\partial f}{\partial \theta_D} \right)^T, \quad \frac{\partial^2 f}{\partial \theta_D \partial \theta_G} \approx \left( \frac{\partial f}{\partial \theta_D} \right) \left( \frac{\partial f}{\partial \theta_G} \right)^T
+$$
       Here, by using outer-product approximation, the computation of second-order derivatives is simplified to the product of first-order derivatives.
 
 These formulas demonstrate how implicit gradient estimation and outer-product approximation can simplify complex  second-order derivative computations, thereby reducing the complexity and memory consumption of the algorithm.
